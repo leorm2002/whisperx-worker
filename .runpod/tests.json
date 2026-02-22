@@ -4,6 +4,7 @@
             "name": "basic_test",
             "input": {
                 "audio_file": "https://github.com/runpod-workers/sample-inputs/raw/main/audio/gettysburg.wav",
+                
                 "language": "id",
                 "debug": true
             },
