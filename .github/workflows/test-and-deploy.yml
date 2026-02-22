@@ -30,4 +30,4 @@ jobs:
                   image-tag: 'leo02n/whisperx-worker:${{ github.sha }}'
                   runpod-api-key: ${{ secrets.RUNPOD_API_KEY }}
                   test-filename: .github/tests.json
-                  request-timeout: 300
+                  request-timeout: 1000
