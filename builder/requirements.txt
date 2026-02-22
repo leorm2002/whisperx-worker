@@ -1,11 +1,11 @@
-# ---------- PyTorch CUDA 12.1 wheels (massimo compatibile con CUDA 12.3.2) ----------
+# ---------- PyTorch CUDA 12.1 wheels ----------
 --extra-index-url https://download.pytorch.org/whl/cu121
 torch==2.5.1+cu121
 torchaudio==2.5.1+cu121
 
 # ---------- main libs ----------
 whisperx==3.1.1
-pyannote.audio==3.3.2
+pyannote.audio==3.1.1
 speechbrain==1.0.0
 ctranslate2==4.4.0
 

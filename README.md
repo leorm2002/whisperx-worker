@@ -1,4 +1,4 @@
-[![Runpod](https://api.runpod.io/badge/hapnan/whisperx-worker)](https://console.runpod.io/hub/hapnan/whisperx-worker)
+<!-- [![Runpod](https://api.runpod.io/badge/hapnan/whisperx-worker)](https://console.runpod.io/hub/hapnan/whisperx-worker) -->
 
 # WhisperX Worker for RunPod
 
