@@ -19,11 +19,6 @@ from typing import Optional
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-from speechbrain.pretrained import EncoderClassifier # type: ignore
-
-def spk_embed(wave_16k_mono: np.ndarray) -> np.ndarray:
-    wav = torch.tensor(wave_16k_mono).unsqueeze(0).to(device)
-    return ecapa.encode_batch(wav).squeeze(0).cpu().numpy()
 
 def to_numpy(x):
     return x.detach().cpu().numpy() if isinstance(x, torch.Tensor) else np.asarray(x)
