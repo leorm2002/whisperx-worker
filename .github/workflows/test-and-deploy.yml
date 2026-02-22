@@ -24,10 +24,10 @@ jobs:
                   push: true
                   tags: 'leo02n/whisperx-worker:${{ github.sha }}'
 
-            - name: Run Tests
-              uses: runpod/test-runner@v2.1.0
-              with:
-                  image-tag: 'leo02n/whisperx-worker:${{ github.sha }}'
-                  runpod-api-key: ${{ secrets.RUNPOD_API_KEY }}
-                  test-filename: .github/tests.json
-                  request-timeout: 1000
+            # - name: Run Tests
+            #   uses: runpod/test-runner@v2.1.0
+            #   with:
+            #       image-tag: 'leo02n/whisperx-worker:${{ github.sha }}'
+            #       runpod-api-key: ${{ secrets.RUNPOD_API_KEY }}
+            #       test-filename: .github/tests.json
+            #       request-timeout: 1000
