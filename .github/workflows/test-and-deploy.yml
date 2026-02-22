@@ -22,4 +22,4 @@ jobs:
                   secrets: hf_token=${{ secrets.HF_TOKEN }}
                   context: .
                   push: true
-                  tags: 'leo02n/whisperx-worker:${{ github.sha }}'
+                  tags: 'leo02n/whisperx-worker:LATEST'
