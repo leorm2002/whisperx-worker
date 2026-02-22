@@ -1,27 +1,28 @@
-# ---------- PyTorch CUDA 12.1 wheels ----------
---extra-index-url https://download.pytorch.org/whl/
-torch
-torchaudio
+# ---------- PyTorch CUDA 12.1 wheels (massimo compatibile con CUDA 12.3.2) ----------
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1+cu121
+torchaudio==2.5.1+cu121
 
 # ---------- main libs ----------
-whisperx
-pyannote.audio               # embedded/diarization
-speechbrain                 # ECAPA embedding that whisperx uses
-ctranslate2                  # used by whisperx
+whisperx==3.1.1
+pyannote.audio==3.3.2
+speechbrain==1.0.0
+ctranslate2==4.4.0
+
 # ---------- speechbrain dependencies ----------
-sentencepiece
+sentencepiece==0.2.0
+
 # ---------- utilities ----------
-pydub
-numpy                        # CUDA 12.1 compatible
-scipy
-librosa
-huggingface-hub
-runpod
-cog
-speechbrain
-cryptography
-python-dotenv
-# ---------- runpod / cog ----------
-# Latest runpod (s2.x) supports Python 3.10 / 3.11
-runpod
-# "cog" is **only** needed in local dev; drop it in container
+pydub==0.25.1
+numpy==1.26.4
+scipy==1.13.1
+librosa==0.10.2
+huggingface-hub==0.26.2
+hf_transfer==0.1.8
+
+# ---------- runpod ----------
+runpod==1.7.3
+
+# ---------- misc ----------
+cryptography==42.0.8
+python-dotenv==1.0.1

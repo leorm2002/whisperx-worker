@@ -9,9 +9,6 @@
         "input": {
             "audio_file": "https://github.com/runpod-workers/sample-inputs/raw/main/audio/gettysburg.wav",
             "language": "id",
-            "align_output": true,
-            "custom_align_model": "panjiariputra/indonesian-xlsr_53-LARGE-4gram",
-            "batch_size": 32,
             "debug": true
         }
     }
